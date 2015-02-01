@@ -2,9 +2,9 @@
 #+AUTHOR: Daniel Grammatica
 #+EMAIL: dan@t0xic.me
 
-** 1. Introduction
+** 1. Dotfiles
 
-This repository includes all of my custom dotfiles and mbp configuration. To install the dotfiles clone the repository, then =chmod +x create_symlinks.sh=.
+This repository includes all of my custom dotfiles and mbp configuration. Firstly =chmod +x scripts/*= to make the scripts executable.
 The =create_symlinks.sh= script creates symlinks from all files in the =dotfiles/= directory to your home directory =~/=.
 
 Before copying the dotfiles and pre-existing dotfiles will be copied to the =dotfiles_old/= directory in the repository.
@@ -13,4 +13,9 @@ Before copying the dotfiles and pre-existing dotfiles will be copied to the =dot
  - Back up any existing dotfiles in =~/= to =dotfiles_old/=
  - Create symlinks to the dotfiles in =dotfiles/= in your home directory 
  
-   
+** 2. Drivers
+
+To install the MacBook wireless drivers run =./scripts/install_drivers.sh=. This will:
+ - Install =dkms_2.2.0.3-1.1ubuntu5_all.deb= allowing you to install Linux Kernel Modules
+ - Install =bcmwl-kernel-source_6.30.223.141+bdcom-0ubuntu2_amd64.deb= the broadcom wireless drivers
+*** TODO Update drivers
