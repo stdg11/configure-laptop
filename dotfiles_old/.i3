@@ -1,0 +1,1 @@
+/home/warad337/Documents/repo/configure-laptop/dotfiles/i3
