@@ -1,0 +1,15 @@
+#+TITLE: MBP 10,1 Ubuntu 14.04 Configuration/Dotfiles
+#+AUTHOR: Daniel Grammatica
+#+EMAIL: dan@t0xic.me
+
+** 1. Introduction
+
+This repository includes all of my custom dotfiles and mbp configuration. To install the dotfiles clone the repository, then =chmod +x create_symlinks.sh=.
+The =create_symlinks.sh= script creates symlinks from all files in the =dotfiles/= directory to your home directory (~/).
+
+Before copying the dotfiles and pre-existing dotfiles will be copied to the =dotfiles_old/= directory in the repository.
+
+TL;DR Thi install script will:
+ - Back up any existing dotfiles in =~/= to =dotfiles_old/=
+ - Create symlinks to the dotfiles in =dotfiles/= in your home directory 
+ 

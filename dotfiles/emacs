@@ -1,0 +1,23 @@
+;;;;Inhibit startup screen
+(setq inhibit-startup-message t)
+;;;; Python settings to use Python 3
+(setq python-shell-interpreter "/usr/bin/python3")
+;;Set backupfolder for emacs
+(setq backup-directory-alist `(("." . "~/.emacsbackup")))
+;; Enable Package use prior to .emacs load
+;;(setq package-enable-at-startup nil)
+(package-initialize)
+;;;; paths added to load-path
+(add-to-list 'load-path "~/.emacs.d/elpa")
+(add-to-list 'load-path "~/.emacs.d/themes")
+(require 'package)
+;;Package managers
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+			  ("marmalade" . "http://marmalade-repo.org/packages/")
+			   ("melpa" . "http://melpa.milkbox.net/packages/")
+			    ("org" . "http://orgmode.org/elpa/")))
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
