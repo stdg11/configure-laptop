@@ -1,1 +1,0 @@
-/home/warad337/Documents/repo/configure-laptop/dotfiles/emacs

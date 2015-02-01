@@ -13,9 +13,13 @@ Before copying the dotfiles and pre-existing dotfiles will be copied to the =dot
  - Back up any existing dotfiles in =~/= to =dotfiles_old/=
  - Create symlinks to the dotfiles in =dotfiles/= in your home directory 
  
-** 2. Drivers
+** 2. Setup Mac
+
+** 3. Manual Install
+To install an individual component of the =setup_mac.sh= follow the instructions below.
+*** 3.1 Drivers
 
 To install the MacBook wireless drivers run =./scripts/install_drivers.sh=. This will:
  - Install =dkms_2.2.0.3-1.1ubuntu5_all.deb= allowing you to install Linux Kernel Modules
  - Install =bcmwl-kernel-source_6.30.223.141+bdcom-0ubuntu2_amd64.deb= the broadcom wireless drivers
-*** TODO Update drivers
+**** TODO Update drivers

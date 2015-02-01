@@ -1,5 +1,0 @@
-[user]
-	email = daniel.grammatica@bourne-grammar.lincs.sch.uk
-	name = Daniel Grammatica
-[credential]
-	helper = cache --timeout=7200
