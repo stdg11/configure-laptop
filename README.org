@@ -9,7 +9,7 @@ The =create_symlinks.sh= script creates symlinks from all files in the =dotfiles
 
 Before copying the dotfiles and pre-existing dotfiles will be copied to the =dotfiles_old/= directory in the repository.
 
-*TL;DR* The install script will:
+*TL;DR* =create_symlinks.sh=q= script will:
  - Back up any existing dotfiles in =~/= to =dotfiles_old/=
  - Create symlinks to the dotfiles in =dotfiles/= in your home directory 
  
